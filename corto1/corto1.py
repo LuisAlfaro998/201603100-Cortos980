@@ -12,8 +12,8 @@ def collat(n):                  #se crea una funcion para solo llamarla despues
             n=3*n+1
             numeros.append(n)
     print(numeros)
-    archivo = open('collatz.txt','w')
-    archivo.writelines(str(numeros))
+    archivo = open('collatz.txt','w') #remplazar 'w' por 'a'. Cada vez que es llamada la funcion se sobreescribe el archivo
+    archivo.writelines(str(numeros))  #por lo tanto el archivo solo tendra la ultima secuencia
     archivo.close()
     return(numeros)
 
@@ -24,5 +24,12 @@ for i in range(2,x):
     
     #for linea in archivo:
     
-    
+#Funcionamiento:        30/40 no agrega todas las secuencias en el archivo
+#Uso de Funciones       20/20
+#Manejo de archivos     10/10
+#Manejo de Listas       10/10
+#Uso de git             20/20
+#*****************************
+#Total                  90/100
+
 
